@@ -1,0 +1,13 @@
+// envia pacote e realiza coneção
+payload é a base aonde se carrega o exploit, que é um algoritimo de exploração.
+evasion, permite fazer uma evazao de um firewall.
+
+use
+  
+  
+msfconfig - inicia o Metasploit
+  search mostra todas as classes 
+  search type:exploit   exibe todos os exploits do msfconfig.
+  search type: exploit platform:windows   exibe exploits de windows
+  search type: exploit platform:windows SMB exibe tudo oq possui SMB
+  search linux exibe tudo para linux.
