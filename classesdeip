@@ -1,10 +1,30 @@
-definidas pela quantidade de rede / host
+Classes definidas pela quantidade de rede / host.         APÓS O /BARRA, MOSTRA QUANTOS HOSTS SERÃO VARRIDOS.
 
 classe A   - N/H 255.0.0.0/8
 
 Classe B   - N/H 255.255.0.0/16
 
-Classe C   - N/H 255.255.255.0/24 APÓS O /BARRA MOSTRA QUANTOS HOSTS SERÃO VARRIDOS
+Classe C   - N/H 255.255.255.0/24
+
 
 CADA GRUPO DE DIGITO É CHAMADO OCTETO.EX: 255.
+
+
+
+*serviço de nmap, varredura de porta aberta.
+nmap -v xxx.xxx.xx.x/24
+
+*para saber se o host esta ativo, neste caso sera listado apenas os hosts de 100-200 ate 200.
+nmap -v -sn xxx.xxx.xx.100-200   
+
+*neste caso sera exibido tudo oq for 192
+nmap -v -sn 192.168.15.100-200 | grep 192 |  
+
+*neste caso sera exibido exibido as portas host de 0 até 50,  (NOME|PIPE = | ) =  " | grep 192 " esta parte seleciona todos os
+hosts 192
+nmap -v -sn 192.168.15.0-50 | grep 192 
+
+*Neste caso o resultado da pesquisa será salvo em um arquivo de texto
+nmap -v -sn 192.168.15.0-50 |grep 192 > varredura.txt
+
 
