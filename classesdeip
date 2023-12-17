@@ -1,0 +1,10 @@
+definidas pela quantidade de rede / host
+
+classe A   - N/H 255.0.0.0/8
+
+Classe B   - N/H 255.255.0.0/16
+
+Classe C   - N/H 255.255.255.0/24 APÓS O /BARRA MOSTRA QUANTOS HOSTS SERÃO VARRIDOS
+
+CADA GRUPO DE DIGITO É CHAMADO OCTETO.EX: 255.
+
